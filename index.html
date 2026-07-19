@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Lakshya Makkar — Frontend Developer, Video Editor & Creative Designer. Portfolio." />
+<title>Lakshya Makkar | Portfolio</title>
+<link rel="stylesheet" href="portfolio.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- video scrubber / scroll progress -->
+<div class="scrub-track" aria-hidden="true">
+  <div class="scrub-fill" id="scrubFill"></div>
+  <div class="scrub-head" id="scrubHead"></div>
+</div>
+
+<div class="bc-video">
+  <video autoplay muted loop playsinline preload="auto">
+    <source src="bcvideo.mp4" type="video/mp4">
+  </video>
+  <div class="bc-video-veil"></div>
+</div>
+
+<!-- HEADER / NAVBAR -->
+<header class="site-header">
+  <nav class="nav-bar" aria-label="Site navigation">
+    <div class="brand">
+      <span class="rec-dot" aria-hidden="true"></span>
+      <span class="brand-name">LAKSHYA<span class="brand-dot">.</span>MAKKAR</span>
+    </div>
+
+    <div class="nav-icons">
+      <a href="https://www.instagram.com/lakshya_makkar" target="_blank" rel="noopener" aria-label="Instagram">
+        <img src="insta.png" alt="Instagram">
+      </a>
+      <a href="https://wa.me/917528065765" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <img src="wssp.png" alt="WhatsApp">
+      </a>
+      <a href="https://www.linkedin.com/in/lakshya-makkar-5b1408376" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="linkedin.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/Lakshya-codes" target="_blank" rel="noopener" aria-label="GitHub">
+        <img src="github.png" alt="GitHub">
+      </a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-frame">
+      <span class="corner tl"></span><span class="corner tr"></span>
+      <span class="corner bl"></span><span class="corner br"></span>
+      <img class="expandable" src="myimg.jpeg" alt="Portrait of Lakshya Makkar" tabindex="0">
+    </div>
+
+    <div class="hero-text">
+      <p class="eyebrow"><span class="rec-dot small"></span> WELCOME TO MY PORTFOLIO</p>
+      <h1 class="heading" aria-live="polite">Lakshya Makkar</h1>
+      <p class="role-caption">Frontend Developer · Video Editor · Graphics Designer · Vocalist · Learner  </p>
+
+      <div class="discription">
+        <h3>Know me more</h3>
+        <p>
+          I'm a BCA student building clean, functional interfaces on the
+          <strong>frontend</strong>, and telling stories through
+          <strong>video editing and visual design</strong> off it.
+          Right now I'm deepening my skills in <strong>modern web technologies</strong>
+          while keeping one foot in the editing timeline.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lakshyamakkar7@gmail.com"
+   target="_blank"
+   class="btn btn-ghost">
+   E-Mail Me Here 📧
+</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="reel" id="skills">
+    <h2 class="reel-heading"><span class="timecode">REEL&nbsp;01</span> My Skills <span class="degree">🧑‍🎓</span></h2>
+
+    <div class="track-group">
+      <div class="track">
+        <p class="track-label">dev track</p>
+        <div class="chip-row">
+          <div class="chip"><img src="html.png" alt="HTML"><span>HTML</span></div>
+          <div class="chip"><img src="css.png" alt="CSS"><span>CSS</span></div>
+          <div class="chip"><img src="javascript.png" alt="JavaScript"><span>JavaScript</span></div>
+          <div class="chip"><img src="c.png" alt="C Programming"><span>C</span></div>
+        </div>
+      </div>
+
+      <div class="track">
+        <p class="track-label">edit track</p>
+        <div class="chip-row">
+          <div class="chip"><img src="filmora.png" alt="Filmora"><span>Filmora</span></div>
+          <div class="chip"><img src="canva.png" alt="Canva"><span>Canva</span></div>
+          <div class="chip"><img src="vn.png" alt="VN Editor"><span>VN</span></div>
+          <div class="chip"><img src="premier.png" alt="Adobe Premiere"><span>Premiere</span></div>
+          <div class="chip"><img src="capcut.jpg" alt="CapCut"><span>CapCut</span></div>
+          <div class="chip"><img src="powerpoint.png" alt="PowerPoint"><span>PowerPoint</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="reel" id="projects">
+    <h2 class="reel-heading"><span class="timecode">REEL&nbsp;02</span> My Projects <span class="degree">💻</span></h2>
+
+    <div class="card-grid project-grid">
+
+      <article class="card project-card">
+        <div class="card-media">
+          <img class="expandable" src="smartcart.png" alt="SmartCart e-commerce homepage" tabindex="0">
+        </div>
+        <div class="card-body">
+          <h3>SmartCart - Shop Smartly</h3>
+          <p>A modern, fully responsive e-commerce site focused on performance and clean UI/UX, with a seamless shopping experience.</p>
+          <div class="tag-row">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Responsive UI</span>
+          </div>
+          <a class="btn btn-primary btn-sm" href="https://lakshya-codes.github.io/lakshya-shopcart/" target="_blank" rel="noopener">Visit site ⚡</a>
+        </div>
+      </article>
+
+      <article class="card project-card">
+        <div class="card-media">
+          <img class="expandable" src="goalgrid.png" alt="GoalGrid task and goal tracker interface" tabindex="0">
+        </div>
+        <div class="card-body">
+          <h3>GoalGrid</h3>
+          <p>A simple yet powerful interface for planning your day, tracking personal goals, and managing tasks — all in one place.</p>
+          <div class="tag-row">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Task Management</span>
+          </div>
+          <a class="btn btn-primary btn-sm" href="https://lakshya-codes.github.io/lakshya_goalgrid/" target="_blank" rel="noopener">Visit site ⚡</a>
+        </div>
+      </article>
+
+      <article class="card project-card">
+        <div class="card-media">
+          <img class="expandable" src="formulafusion.png" alt="Formula Fusion calculator interface" tabindex="0">
+        </div>
+        <div class="card-body">
+          <h3>Formula Fusion</h3>
+          <p>An installable web app for fast, accessible formula exploration and calculation — built for students, educators and math enthusiasts.</p>
+          <div class="tag-row">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">PWA</span>
+          </div>
+          <a class="btn btn-primary btn-sm" href="https://lakshya-codes.github.io/Formula_Fusion/" target="_blank" rel="noopener">Visit site ⚡</a>
+        </div>
+      </article>
+
+      <article class="card project-card">
+        <div class="card-media">
+          <img class="expandable" src="connectfour.png" alt="Four in a Row game board" tabindex="0">
+        </div>
+        <div class="card-body">
+          <h3>Connect the Four</h3>
+          <p>A fun, interactive two-player strategy game — connect four discs horizontally, vertically or diagonally before your opponent.</p>
+          <div class="tag-row">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Game Logic</span>
+          </div>
+          <a class="btn btn-primary btn-sm" href="https://lakshya-codes.github.io/lakshya-connect_the_four/" target="_blank" rel="noopener">Visit site ⚡</a>
+        </div>
+      </article>
+
+      <article class="card project-card">
+        <div class="card-media">
+          <img class="expandable" src="Screenshot 2026-01-27 132038.png" alt="Screenshot of the Rock Paper Scissors game" tabindex="0">
+        </div>
+        <div class="card-body">
+          <h3>Rock Paper Scissors</h3>
+          <p>A browser game with score tracking and instant feedback, built from scratch in vanilla JS.</p>
+          <div class="tag-row">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+          </div>
+          <a class="btn btn-primary btn-sm" href="https://lakshya-codes.github.io/Lakshya_rock_paper_scissors/" target="_blank" rel="noopener">Check it out ⚡</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="reel" id="certificates">
+    <h2 class="reel-heading"><span class="timecode">REEL&nbsp;03</span> My Certifications <span class="degree">🚀</span></h2>
+
+    <div class="card-grid">
+      <article class="card">
+        <div class="card-media">
+          <img class="expandable" src="excelcertificate.png" alt="MS Excel with AI certificate" tabindex="0">
+        </div>
+        <div class="card-body">
+          <p class="certext">Gained practical expertise in Microsoft Excel by leveraging AI to automate tasks, analyze data, and boost productivity.
+Enhanced spreadsheet management, data visualization, and AI-assisted workflow optimization for real-world applications.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <img class="expandable" src="course 1.jpeg" alt="Canva design certificate" tabindex="0">
+        </div>
+        <div class="card-body">
+          <p class="certext">Learned to create professional graphics, social media posts, presentations, and branding materials using Canva.
+Developed creative design skills with a focus on visual communication, layout, and modern design principles.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <img class="expandable" src="aicertificate.png" alt="Canva design certificate" tabindex="0">
+        </div>
+        <div class="card-body">
+          <p class="certext">Mastered 20+ AI tools through hands-on learning, enhancing productivity, content creation, and development workflows.
+Strengthened practical AI skills for solving real-world problems and building smarter digital solutions..</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <img class="expandable" src="codealphacer (1).png" alt="Canva design certificate" tabindex="0">
+        </div>
+        <div class="card-body">
+          <p class="certext">Successfully completed the virtual Frontend Development Internship with consistent performance and dedication.
+Applied modern web development concepts to real-world projects while improving problem-solving and coding skills.</p>
+        </div>
+      </article>
+
+      <article class="card card-tall">
+        <div class="card-media">
+          <img class="expandable" src="CODE ALPHA OFFER LETTER.jpeg" alt="CodeAlpha internship offer letter" tabindex="0">
+        </div>
+        <div class="card-body">
+          <p class="certext">Completed a Frontend Development internship by building responsive web applications using HTML, CSS, and JavaScript.
+Gained practical experience in UI development, debugging, and creating user-friendly web interfaces.</p>
+        </div>
+      </article>
+
+      <article class="card card-tall">
+        <div class="card-media">
+          <img class="expandable" src="internpe.png" alt="Internpe internship offer letter" tabindex="0">
+        </div>
+        <div class="card-body">
+          <p class="certext">Selected for a 6-week Web Development internship focused on building responsive and interactive web applications.
+Enhanced practical development skills through hands-on projects, industry practices, and real-world experience.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="copyright"></p>
+</footer>
+
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Expanded image" hidden>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close image">✕</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script src="portfolio.js"></script>
+</body>
+</html>
