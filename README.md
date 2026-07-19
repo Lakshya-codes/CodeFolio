@@ -6,7 +6,7 @@
 
 ## 🚀 Live Demo
 
-🔗 **Portfolio:** *(Add your live portfolio link here)*
+🔗 https://lakshya-codes.github.io/Lakshya_Portfolio/
 
 
 # ✨ Features
