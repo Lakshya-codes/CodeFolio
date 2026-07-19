@@ -7,11 +7,7 @@ document.addEventListener("touchstart", () => {
 // ---- typing effect on the hero heading ----
 document.addEventListener("DOMContentLoaded", () => {
   const texts = [
-    "Lakshya Makkar 😄",
-    "Aspiring Vocalist 🎤",
-    "Video Editor 🎬",
-    "Virtual Invitation Creator 🎉",
-    "Aspiring Frontend Developer 💻"
+    "Lakshya Makkar",
   ];
 
   const element = document.querySelector(".heading");
