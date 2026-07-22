@@ -228,6 +228,7 @@ main{ max-width:var(--max); margin:0 auto; padding:0 clamp(14px, 4vw, 32px); }
   border-radius:999px;
   text-decoration:none;
   display:inline-flex; align-items:center; gap:6px;
+  white-space:nowrap;
   transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
 }
 .btn-primary{
@@ -247,6 +248,17 @@ main{ max-width:var(--max); margin:0 auto; padding:0 clamp(14px, 4vw, 32px); }
   border-color:var(--cyan);
   color:var(--cyan);
   transform:translateY(-2px);
+}
+.btn-resume{
+  background:transparent;
+  color:var(--cyan);
+  border:1px solid var(--cyan);
+}
+.btn-resume:hover, .btn-resume:focus-visible{
+  background:rgba(53,224,209,.1);
+  color:var(--ink);
+  transform:translateY(-2px);
+  box-shadow:0 10px 24px rgba(53,224,209,.25);
 }
 .btn-sm{ padding:8px 16px; font-size:13px; margin-top:14px; }
 .btn:focus-visible{ outline:2px solid var(--cyan); outline-offset:3px; }
@@ -297,6 +309,84 @@ main{ max-width:var(--max); margin:0 auto; padding:0 clamp(14px, 4vw, 32px); }
   transform:translateY(-3px);
   border-color:var(--cyan);
   background:var(--glass-strong);
+}
+
+/* --- timeline (qualifications & experience) --- */
+.timeline{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  gap:22px;
+  padding-left:26px;
+}
+.timeline::before{
+  content:"";
+  position:absolute;
+  left:5px; top:6px; bottom:6px;
+  width:2px;
+  background:linear-gradient(180deg, var(--gold), var(--cyan));
+  opacity:.5;
+}
+.timeline-item{ position:relative; }
+.timeline-dot{
+  position:absolute;
+  left:-26px; top:22px;
+  width:11px; height:11px;
+  border-radius:50%;
+  background:var(--gold);
+  box-shadow:0 0 0 4px rgba(242,169,59,.18), 0 0 10px var(--gold);
+}
+.timeline-dot-alt{
+  background:var(--cyan);
+  box-shadow:0 0 0 4px rgba(53,224,209,.18), 0 0 10px var(--cyan);
+}
+.timeline-experience .timeline-dot{ top:22px; }
+.timeline-card{
+  background:var(--glass);
+  border:1px solid var(--glass-border);
+  border-radius:var(--radius);
+  padding:18px 22px;
+  backdrop-filter:blur(8px);
+  transition:transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+.timeline-card:hover{
+  transform:translateY(-3px);
+  border-color:rgba(53,224,209,.4);
+  box-shadow:0 14px 32px rgba(0,0,0,.3);
+}
+.timeline-year{
+  font-family:var(--font-mono);
+  font-size:12px;
+  letter-spacing:.06em;
+  color:var(--cyan);
+  margin-bottom:6px;
+}
+.timeline-card h3{
+  font-family:var(--font-display);
+  font-size:17px;
+  color:var(--ink);
+  margin-bottom:4px;
+}
+.timeline-stream{
+  font-family:var(--font-body);
+  font-weight:500;
+  font-size:14px;
+  color:var(--ink-dim);
+}
+.timeline-sub{
+  font-size:13.5px;
+  color:var(--ink-dim);
+  margin-bottom:8px;
+}
+.score-badge{
+  display:inline-block;
+  font-family:var(--font-mono);
+  font-size:12px;
+  letter-spacing:.04em;
+  color:#141210;
+  background:linear-gradient(90deg, var(--gold), #ffcf72);
+  padding:3px 12px;
+  border-radius:999px;
 }
 
 /* --- cards (projects / certificates) --- */
